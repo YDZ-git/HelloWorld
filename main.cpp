@@ -8,7 +8,8 @@ void sort(int arr[],int size)
     {
         for(int j =0; j < size-i-1; j++ )
         {
-                if(arr[j] > arr[j+1])
+			    // YDZ修改从大到小排序
+                if(arr[j] < arr[j+1])
                 {
                         temp = arr[j];
                         arr[j] = arr[j+1];
